@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get an Estimate for Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="page-header">
+        <h1>Post Your Requirements</h1>
+        <p>Please provide your information so we can get in touch with you.</p>
+    </div>
+
+        <form>
+            <div class="modal-field">
+                <label for="name-label" class="modal-input">Name</label>
+                <input class="input-control" type="text" name="name" placeholder="Your Name" id="name-label" required />
+            </div>
+                <div class="modal-field">
+                    <label for="number-label" class="modal-input">Phone number</label>
+                    <input class="input-control" type="tel" name="number" placeholder="(123) 456 - 7890" id="number-label" required />
+                </div>
+                <div class="modal-field">
+                    <label for="email-label" class="modal-input">Email</label>
+                    <input class="input-control" type="email" name="email" placeholder="Your Mail ID" id="email-label" required />
+                </div>
+                <div class="modal-field">
+                    <label for="dropdown-role" class="modal-input">Which option best describes your current role?</label>
+                    <select id="dropdown-role" name="role" class="dropdown-control" required>
+                        <option value="choose-one">Choose One</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full-Time Job</option>
+                        <option value="part-job">Part-Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+                <div class="modal-field">
+                    <label for="dropdown-city" class="modal-input">City</label>
+                    <select id="dropdown-city" name="city" class="dropdown-control" required>
+                        <option value="choose-one">Choose One</option>
+                        <option value="kharkiv">Kharkiv</option>
+                        <option value="kyiv">Kyiv</option>
+                        <option value="lviv">Lviv</option>
+                        <option value="odesa">Odesa</option>
+                        <option value="zaporizhzhia">Zaporizhzhia</option>
+                    </select>
+                </div>
+
+                <div class="modal-field">
+                    <label for="preferences" class="modal-input">Any specific preferences:</label>
+                        <label for="yes" class="modal-input-radio">
+                            <input class="input-radio" type="radio" id="yes" name="preferences" value="yes" required>
+                            Yes
+                        </label>
+                        <label for="no" class="modal-input-radio">
+                            <input class="input-radio" type="radio" id="no" name="preferences" value="no" required>
+                            No
+                        </label>
+                </div>
+
+                <div class="modal-field">
+                    <label for="suggestions" class="modal-input">Any comments or suggestions?</label>
+                    <textarea id="suggestions" class="input-textarea" name="comments"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
