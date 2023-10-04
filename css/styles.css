@@ -5,17 +5,13 @@
 }
 
 body {
-    max-width: 1248px;
     background: #9d99fa;
     font-family: 'DM Sans', sans-serif;
         }
 
 
 .page-header {
-    max-width: 680px;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
+    text-align: center;
 }
 
 h1 {
@@ -28,7 +24,7 @@ form {
     max-width: 700px;
     background: #172d596b;
     color: rgb(240, 240, 230);
-    padding: 24px 352px 244px 64px;
+    padding: 24px 64px;
     border: 1px solid rgba(239, 240, 246, 1);
     border-radius: 34px;
 }
@@ -93,6 +89,8 @@ label {
     border-radius: 46px;
     font-family: inherit;
     font-size: 18px;
+    display: block;
+    margin: 0 auto;
 }
 
 select,
